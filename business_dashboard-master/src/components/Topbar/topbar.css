@@ -1,0 +1,94 @@
+.profilebar{
+    width: 92%;
+    margin: 10px 20px;
+}
+.profilewrapper {
+  width: 100%;
+  background-color: #283046;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.profilewrapper .profileleft {
+  color: #b0b3ba;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.profilewrapper .profileleft i{
+  font-size: 25px;
+  margin:0 5px;
+}
+.profilewrapper .profileright {
+  color: #b0b3ba;
+  display: flex;
+  align-items: center;
+}
+.profilewrapper .profileright i{
+    font-size: 25px;
+    margin:0 5px;
+}
+.profilewrapper .profileright .notifydiv {
+  position: relative;
+}
+.profilewrapper .profileright .notifydiv .cartnotifynum {
+  color: white;
+  position: absolute;
+  top: -3px;
+  left: 15px;
+  background-color: #7367f0;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  font-size: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profilewrapper .profileright .notifydiv .bellnotifynum {
+  position: absolute;
+  top: -3px;
+  left: 15px;
+  color: white;
+  border-radius: 50%;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #ea5455;
+}
+.profilewrapper .profileright .profilename {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin: 0 10px;
+}
+.profilewrapper .profileright .profilename .profname{
+    color: white;
+    font-weight: 500;
+}
+.profilewrapper .profileright .profimg {
+  position: relative;
+  margin: 2px 10px;
+}
+.profilewrapper .profileright .profimg img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profilewrapper .profileright .profimg .profstatus {
+    position: absolute;
+    top: 42px;
+    left: 30px;
+    height: 10px;
+    width: 10px;
+    background: #28c76f;
+  border-radius: 50%;
+  border: 1px solid white;
+}

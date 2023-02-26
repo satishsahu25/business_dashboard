@@ -1,0 +1,110 @@
+.sidebarwrapper{
+    position: fixed;
+    width: 70px;
+    height: 100vh;
+    background: #283046;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    /* top: 0; */
+    /* left: 0; */
+}
+.sidebarwrapper.active{
+    width: 250px;
+}
+.sidebarwrapper .header{
+    background: #283046;
+    display: flex;
+    flex-direction: column;
+}
+.sidebarwrapper .header .logocontent{
+       display: flex;
+       position: relative;
+       align-items: center;
+       color: #6359CF;
+}
+.sidebarwrapper .header .logocontent .icon{
+       display: flex;
+       position: relative;
+       align-items: center;
+       color: #6359CF;
+       opacity: 0;
+}
+.sidebarwrapper.active .header .logocontent .icon{
+      opacity: 1;
+}
+.sidebarwrapper .header .logocontent i{
+    font-size: 40px;
+    margin: 10px 10px 15px 10px;
+}
+.sidebarwrapper .header .logocontent .logotext{
+    font-size: 25px;
+}
+.sidebarwrapper .header .logocontent .menubtn {
+    position: absolute;
+    left: 10%;
+    top: 5px;
+    font-size: 35px;
+}
+.sidebarwrapper.active .header .logocontent .menubtn {
+
+    left: 78%;
+
+}
+.sidebarwrapper .header .logocontent .menubtn i{
+    font-size: 35px;
+}
+.sidebarwrapper .header .searchbox{
+    margin-top: 20px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.sidebarwrapper .header .searchbox i{
+   color: white;
+   font-size: 25px;
+   padding: 0 8px;
+}
+.sidebarwrapper .header .searchbox input{
+    border-radius: 12px;
+    height: 40px;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    opacity: 0;
+}
+.sidebarwrapper.active .header .searchbox input{
+    opacity: 1;
+
+}
+.sidebarwrapper .lists{
+    margin-top: 20px;
+    height: 40px;
+}
+.sidebarwrapper .lists .listitem{
+    margin: 5px 15px;
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 40px;
+    padding: 0 8px;
+    background-color: #283046;
+    border-radius: 12px;
+    transition: all 0.5s ease;
+}
+.sidebarwrapper .lists .listitem:hover{
+    background-color: #615ACA;
+    color: white;
+}
+
+.sidebarwrapper .lists .listitem i{
+    font-size: 25px;
+    margin-right: 10px;
+}
+.sidebarwrapper .lists .listitem .listname{
+    display: none;
+}
+.sidebarwrapper.active .lists .listitem .listname{
+   display: flex;
+}
